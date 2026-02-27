@@ -108,4 +108,3 @@ Puedes ajustar el comportamiento del codigo modificando la constante al inicio d
 | Variable | Valor por defecto | Descripción |
 |---|---|---|
 | `LOWE_RATIO` | `0.95` | Umbral del test de ratio de Lowe. Valores más bajos son más estrictos y reducen los falsos positivos. |
-# reconocimiento_de_huellas

@@ -1,0 +1,22 @@
+1. ¿Por qué una huella podría dar puntaje bajo siendo del mismo usuario?
+
+Una huella puede obtener un puntaje bajo debido a variaciones en la
+captura como diferente presión del dedo, humedad, suciedad o mala
+iluminación, además de heridas o micro heridas en la superficie de la huella. 
+Estos factores pueden afectar la detección de puntos clave
+por parte del algoritmo ORB. Además, si la binarización no es adecuada o
+el umbral del Lowe’s Ratio Test es muy estricto, el sistema puede
+descartar coincidencias reales y disminuir el puntaje.
+
+2. ¿Cómo escalar el sistema a 80,000 imágenes?
+
+Si el sistema creciera a 80,000 imágenes, no sería eficiente hacer
+comparaciones una por una de forma secuencial, ya que el tiempo de
+respuesta aumentaría considerablemente. Para optimizarlo, se deberían
+precalcular y almacenar los descriptores ORB en una base de datos,
+implementar métodos de búsqueda optimizada como vecinos más cercanos y
+utilizar procesamiento paralelo.
+
+Además, sería recomendable migrar el sistema a la nube para permitir
+escalado automático de recursos y mantener tiempos de respuesta bajos
+incluso con grandes volúmenes de datos.
